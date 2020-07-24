@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">IdleGame</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="buildingName">buildingName</string>
+    <string name="productionAmount">ProductionAmount</string>
+    <string name="buildingCount">12345</string>
+    <string name="resource1">Resource1</string>
+    <string name="resource2">Resource2</string>
+    <string name="resource3">Resource3</string>
+    <string name="buy_building_text">buy</string>
+    <string name="production">Production: %1$d</string>
+</resources>

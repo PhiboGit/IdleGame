@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorGrey_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewCostResource1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="@color/colorGrey_light"
+            android:drawableStart="@drawable/ic_resource_build_material_24"
+            android:drawableTint="@color/colorOrange"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/colorTextOn_Grey_light"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textViewCostResource2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewCostResource2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@color/colorGrey_light"
+            android:drawableStart="@drawable/ic_resource_sun_24"
+            android:drawableTint="@color/colorYellow"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/colorTextOn_Grey_light"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textViewCostResource3"
+            app:layout_constraintStart_toEndOf="@+id/textViewCostResource1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewCostResource3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/colorGrey_light"
+            android:drawableStart="@drawable/ic_resource_money_24"
+            android:drawableTint="@color/colorPurple"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/colorTextOn_Grey_light"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewCostResource2"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGrey_primary"
+        app:tabIndicatorColor="@color/colorBlue"
+        app:tabSelectedTextColor="@color/colorTextOn_Grey_light"
+        app:tabTextColor="@color/colorTextOn_Grey_dark" />
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_anchor="@id/tabs"
+        app:layout_anchorGravity="bottom" />
+
+</LinearLayout>
